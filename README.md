@@ -1,7 +1,7 @@
-			0x16. C - Simple Shell
+0x16. C - Simple Shell
 
 
-For this project we will be looking at the following concepts: 
+For this project we will be looking at the following concepts:
 
 Who designed and implemented the original Unix operating system
 Who wrote the first version of the UNIX shell
@@ -17,5 +17,3 @@ How does the shell use the PATH to find the programs
 How to execute another program with the execve system call
 How to suspend the execution of a process until one of its children terminates
 What is EOF / “end-of-file”?
-
- 
