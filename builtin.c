@@ -5,7 +5,7 @@
  * before exiting program
  * @args: terminal passed arguments pointer
  * @line: unknown
- * Return: int 
+ * Return: int
  */
 int exit_function(char **args, char *line)
 {
@@ -28,7 +28,7 @@ int exit_function(char **args, char *line)
 
 /**
  * print_env - prints the OS environment
- * Return: 0 for success 
+ * Return: 0 for success
  */
 int print_env(void)
 {
@@ -43,7 +43,7 @@ int print_env(void)
 }
 
 /**
- * siging - determines the interactivity of the program
+ * sigign - determines the interactivity of the program
  * @sig: signal input
  * Return: void
  */
