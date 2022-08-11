@@ -13,6 +13,13 @@
 #include <sys/stat.h>
 #include <time.h>
 
+/**
+ * struct bin - singly linked list
+ * @name: name of function
+ * @func: function pointer
+ *
+ * Description: holds the name and function pointer of given command
+ */
 typedef struct bin
 {
 	char *name;
