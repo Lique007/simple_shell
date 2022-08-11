@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * _strdup - duplicates a string
+ * @s: string to duplicate
+ * Return: duplcated string
+ */
 char *_strdup(char *s)
 {
 	char *ptr;
@@ -18,6 +23,12 @@ char *_strdup(char *s)
 	return (ptr);
 }
 
+/**
+ * _strconcat - concatinates two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: concatinated string
+ */
 char *_strconcat(char *s1, char *s2)
 {
 	char *strcon;
@@ -48,6 +59,11 @@ char *_strconcat(char *s1, char *s2)
 	return (strcon);
 }
 
+/**
+ * _strlen - finds the length of a given string
+ * @s: string parameter
+ * Return: length of the string
+ */
 int _strlen(char *s)
 {
 	int count;
@@ -57,6 +73,12 @@ int _strlen(char *s)
 	return (count);
 }
 
+/**
+ * _strcmp - compares two string
+ * @s1: first string
+ * @s2:  second string
+ * Return: true if the same else 0 if not
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int diff, index;
@@ -74,6 +96,11 @@ int _strcmp(char *s1, char *s2)
 	return (diff);
 }
 
+/**
+ * _atoi - converts a string to integer type
+ * @s: string to convert
+ * Return: 1 on success or 0 if not
+ */
 int _atoi(char *s)
 {
 	int x;
