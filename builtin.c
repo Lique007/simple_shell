@@ -1,5 +1,12 @@
 #include "simple_shell.h"
 
+/**
+ * exit_function - function free all memory allocations
+ * before exiting program
+ * @args: terminal passed arguments pointer
+ * @line: unknown
+ * Return: int 
+ */
 int exit_function(char **args, char *line)
 {
 	int number;
@@ -19,6 +26,10 @@ int exit_function(char **args, char *line)
 	}
 }
 
+/**
+ * print_env - prints the OS environment
+ * Return: 0 for success 
+ */
 int print_env(void)
 {
 	int x;
@@ -31,6 +42,11 @@ int print_env(void)
 	return (0);
 }
 
+/**
+ * siging - determines the interactivity of the program
+ * @sig: signal input
+ * Return: void
+ */
 void sigign(int sig)
 {
 	if (sig == SIGINT)
