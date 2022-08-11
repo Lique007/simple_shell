@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * execution - execute given command
+ * @args: prepared command and arguments
+ * Return: 0 for success
+ */
 int execution(char **args)
 {
 	pid_t child_pid;
