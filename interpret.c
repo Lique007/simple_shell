@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * interpreter - inteprets the given commands
+ * @args: user supplied command arguments
+ * Return: int
+ */
 int interpreter(char **args)
 {
 	struct stat sb;
@@ -16,6 +21,12 @@ int interpreter(char **args)
 	return (0);
 }
 
+/**
+ * free_function - free memory allocations
+ * @n: variable parameter count
+ * @...: variable parameters
+ * Return: void
+ */
 void free_function(int n, ...)
 {
 	char **dblptr;
@@ -43,6 +54,12 @@ void free_function(int n, ...)
 	va_end(valist);
 }
 
+/**
+ * err_mess - serves error messages
+ * @argv: user inputed arguments
+ * @args: interpreted arguments
+ * Return: void
+ */
 void err_mess(char **argv, char **args)
 {
 	char *space = ": ";
