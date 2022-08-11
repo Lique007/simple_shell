@@ -5,14 +5,13 @@
  * @argv: terminal arguments parameters
  * Return: 0 for successful execution
  */
-int main(int argc, char **argv)
+int main(__attribute__((unused)) int argc, char **argv)
 {
 	int count;
 	char *input;
 	char **args;
 	size_t size;
 
-	(void)argc;
 	signal(SIGINT, sigign);
 	while (1)
 	{
