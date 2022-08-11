@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 	char *input;
 	char **args;
 	size_t size;
-	(void)argc;
 
+	(void)argc;
 	signal(SIGINT, sigign);
 	while (1)
 	{
