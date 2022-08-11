@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * countargs - counts the number arguments from a given string
+ * @line: input string
+ * Return: number of arguments
+ */
 int countargs(char *line)
 {
 	int i, count, flag, j;
@@ -27,6 +32,12 @@ int countargs(char *line)
 	return (count + 1);
 }
 
+/**
+ * parser - tokenizes the given user input
+ * @line: user input
+ * @size: argument count
+ * Return: array of strings
+ */
 char **parser(char *line, int size)
 {
 	char **token_list = malloc(sizeof(char *) * size);
@@ -52,7 +63,11 @@ char **parser(char *line, int size)
 	return (token_list);
 }
 
-
+/**
+ * edit_equal_sign - encodes path characters
+ * @s: input path
+ * Return: void
+ */
 void edit_equal_sign(char **s)
 {
 	int x = 0;
