@@ -1,5 +1,10 @@
 #include "simple_shell.h"
-
+/**
+ * main - Program entry point
+ * @argc: arguments count
+ * @argv: terminal arguments parameters
+ * Return: 0 for successful execution
+ */
 int main(int argc, char **argv)
 {
 	int count;
