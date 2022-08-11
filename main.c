@@ -2,11 +2,11 @@
 
 int main(int argc, char **argv)
 {
-	(void)argc;
 	int count;
 	char *input;
 	char **args;
 	size_t size;
+	(void)argc;
 
 	signal(SIGINT, sigign);
 	while (1)
