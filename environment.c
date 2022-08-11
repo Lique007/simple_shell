@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * find_path - searched for environment paths
+ * @name: path to find
+ * Return: path
+ */
 char *find_path(char *name)
 {
 	int x;
