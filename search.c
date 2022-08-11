@@ -1,5 +1,10 @@
 #include "simple_shell.h"
 
+/**
+ * search - searches for a given command
+ * @args: command and arguments
+ * Return:  0 for success
+ */
 int search(char **args)
 {
 	char **command = NULL;
@@ -31,6 +36,11 @@ int search(char **args)
 	return (0);
 }
 
+/**
+ * search_builtins - searches for custom functions
+ * @args: user command to execute
+ * Return: 0 if command is not found, 1 if found
+ */
 int search_builtins(char **args)
 {
 	builtin builtins[] = {
@@ -52,6 +62,12 @@ int search_builtins(char **args)
 	return (check);
 }
 
+/**
+ * search_dirs - searches in the given path for matching files
+ * @command: command to find
+ * @args: contains the environment paths to search
+ * Return: 0 for succes
+ */
 int search_dirs(char **command, char **args)
 {
 	char *cwd;
